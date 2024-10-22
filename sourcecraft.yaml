@@ -3,8 +3,4 @@ description: some description. An edit.
 version: 1
 base: ubuntu@24.04
 platforms:
-   platform-1:
-      build-on:
-       - amd64
-      build-for:
-       - amd64
+  amd64:
