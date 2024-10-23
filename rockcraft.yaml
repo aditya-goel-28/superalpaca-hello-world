@@ -1,0 +1,22 @@
+name: superalpaca-hello-world-2
+summary: Hello World
+description: The most basic example of a rock.
+version: 1
+license: Apache-2.0
+
+base: bare
+build-base: ubuntu@24.04
+platforms:
+  amd64:
+  arm64:
+  armhf:
+  ppc64el:
+  s390x:
+  riscv64:
+
+parts:
+  hello:
+    plugin: nil
+    stage-packages:
+      - hello
+
