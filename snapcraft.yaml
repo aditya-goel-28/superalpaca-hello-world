@@ -1,5 +1,5 @@
 name: superalpaca-hello-world-2
-base: core22
+base: core24
 version: 1
 summary: Single-line elevator pitch for your amazing snap
 description: |
@@ -7,11 +7,6 @@ description: |
   most important story about your snap. Keep it under 100 words though,
   we live in tweetspace and your description wants to look good in the snap
   store.
-architectures:
-  - build-on: amd64
-    build-for: arm64
-  - build-on: s390x
-    build-for: s390x
 platforms:
   amd64:
   arm64:
