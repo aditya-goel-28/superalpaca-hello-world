@@ -1,4 +1,4 @@
-name: hello
+name: superalpaca-hello-world-2
 base: core22
 version: '2.10'
 summary: GNU Hello, the "hello world" snap
