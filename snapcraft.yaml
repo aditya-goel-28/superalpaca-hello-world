@@ -7,6 +7,12 @@ description: |
 grade: devel
 confinement: devmode
 
+architectures:
+  - build-on: amd64
+    build-for: amd64
+  - build-on: arm64
+    build-for: arm64
+
 parts:
   gnu-hello:
     plugin: nil
