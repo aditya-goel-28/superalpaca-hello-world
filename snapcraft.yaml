@@ -1,14 +1,35 @@
 name: superalpaca-hello-world-2
-base: core20
-version: '2.10'
-summary: GNU Hello, the "hello world" snap
+base: core24
+version: 1
+summary: Single-line elevator pitch for your amazing snap
 description: |
-  GNU hello prints a friendly greeting.
-grade: devel
-confinement: devmode
+  This is my-snap's description. You have a paragraph or two to tell the
+  most important story about your snap. Keep it under 100 words though,
+  we live in tweetspace and your description wants to look good in the snap
+  store.
+platforms:
+  amd64:
+  arm64:
+  armhf:
+  ppc64el:
+  s390x:
+  riscv64:
 
-architectures: [amd64, arm64]
+grade: devel
+confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
-  gnu-hello:
+  pretty:
+    source: https://git.staging.snapcraftcontent.com/ubuntu/public/sourcecraft/bowenfan-pretty
+    source-type: git
+    source-depth: 1
+    source-branch: 0.2-24.04_edge
     plugin: nil
+    override-stage: ""
+  text:
+    source: https://git.staging.snapcraftcontent.com/ubuntu/public/sourcecraft/bowenfan-text
+    source-type: git
+    source-depth: 1
+    source-branch: 0.1-24.04_edge
+    plugin: nil
+    override-stage: ""
