@@ -1,5 +1,5 @@
 name: superalpaca-hello-world-2
-base: core24
+base: core22
 version: 1
 summary: Single-line elevator pitch for your amazing snap
 description: |
@@ -8,7 +8,7 @@ description: |
   we live in tweetspace and your description wants to look good in the snap
   store.
 architectures:
-  arm64:
+  - build-on: [amd64]
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
