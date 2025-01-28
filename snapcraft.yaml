@@ -1,5 +1,5 @@
 name: superalpaca-hello-world-2
-base: core20
+base: core24
 version: 1
 summary: Single-line elevator pitch for your amazing snap
 description: |
