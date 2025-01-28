@@ -8,12 +8,7 @@ description: |
   we live in tweetspace and your description wants to look good in the snap
   store.
 platforms:
-  amd64:
   arm64:
-  armhf:
-  ppc64el:
-  s390x:
-  riscv64:
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
