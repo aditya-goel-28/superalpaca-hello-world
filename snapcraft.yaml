@@ -1,5 +1,5 @@
 name: superalpaca-hello-world-2
-base: core20
+base: core22
 version: "1"
 summary: Single-line elevator pitch for your amazing snap
 description: |
@@ -9,7 +9,9 @@ description: |
   store.
 architectures:
   - build-on: [amd64]
-    run-on: [amd64]
+    build-for: [amd64]
+  - build-on: [armhf]
+    build-for: [armhf]
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
