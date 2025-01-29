@@ -7,6 +7,9 @@ description: |
   most important story about your snap. Keep it under 100 words though,
   we live in tweetspace and your description wants to look good in the snap
   store.
+architectures:
+  - build-on: [amd64]
+    run-on: [amd64]
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
