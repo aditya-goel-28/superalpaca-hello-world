@@ -8,7 +8,7 @@ description: |
   we live in tweetspace and your description wants to look good in the snap
   store.
 architectures:
-  - build-on: [arm64]
+  - build-on: [ppc64el]
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
