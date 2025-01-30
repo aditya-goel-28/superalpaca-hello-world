@@ -9,7 +9,7 @@ description: |
   store.
 architectures:
   - build-on: [amd64]
-    run-on: [amd64]
+    build-for: [amd64]
 
 grade: devel
 confinement: devmode # use 'strict' once you have the right plugs and slots
